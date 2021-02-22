@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    background-image: url(../assets/images/bg-parallax.png);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 2px dashed #1faa00;
+    box-shadow: 2px;
+}
+
+.flexhead {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #64dd17;
+    padding: 5px;
+}
+
+header .flexhead {
+    display: flex;
+    justify-content: space-between;
+    }
+
+header a {
+    color: white;
+    padding: 0px 0px 0px 20px;
+}
+
+.action {
+    display: block;
+    transition: ease all 0.3s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+.icon {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.ikon {
+    display: none;
+}
+
+nav {
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #1faa00;
+    border-radius: 5px;
+    text-decoration: overline;
+}
+
+.home-image {
+    position: relative;
+    overflow: hidden;
+    max-height: 570px;
+}
+
+.home-image img {
+    width: 100%;
+}
+
+.home-bar {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #64dd17;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.button:hover {
+    background-color: #1faa00;
+}
+
+.service-bar {
+    background-color: #64dd17;
+    width: 100%;
+    height: max-content;
+}
+
+.service-bar h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.container-service {
+    padding: 0px 50px 0px 50px;
+    color: white;
+    text-align: justify;
+}
+
+.featured-image1 {
+    float: left;
+    width: 550px;
+    padding: 0px 20px 0px 30px;
+}
+
+.feature-bar {
+    height: max-content;
+    width: 100%;
+}
+
+.feature-bar h2 {
+    text-align: center;
+    color: #1faa00;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container-feature {
+    padding: 0px 20px 0px 100px;
+    color: #1faa00;
+    text-align: justify;
+}
+
+.featured-image2 {
+    float: right;
+    height: 600px;
+    padding: 0px 100px 0px 20px;
+}
+
+.price-bar {
+    height: max-content;
+    width: 100%;
+}
+
+.price-bar h2 {
+    text-align: center;
+    color: #1faa00;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+
+.flexprice {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    margin: 0 auto
+}
+
+.box{
+    flex-grow: 1;
+    background-color: #64dd17;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-price {
+    color: white;
+    text-align: center;
+}
+
+aside {
+    background-color: #64dd17;
+    padding: 20px;
+    height: 500px;
+}
+
+.profile h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;   
+}
+
+.profile img{
+    width: 500px;
+    float: left;
+}
+
+table {
+    text-align: left;
+}
+
+th {
+    width: 100px;
+}
+
+blockquote::before {
+   content: '"';
+   font-size: 30px;
+   font-weight: bold;
+}
+
+footer {
+    padding: 25px;
+    color: white;
+    background-color: #64dd17;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+ 
+    #content {
+        width: 100%
+    }
+    
+    .home-bar {
+        position: absolute;
+    }
+
+    .flexprice {
+        flex-direction: column;
+        width: 400px;
+        height: max-content;
+    }
+    .home-image img{
+        height: 650px;
+    }
+    .home-bar {
+        top: 25%;
+        width: 90%;
+    }
+    .profile img{
+        width: 100px;
+    }
+    .nav1{
+        overflow: hidden;
+        position: static;
+    }
+    .nav1 #dropdown {
+        display: none;
+    }
+    .nav1 a{
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        width: 65px;
+    }
+    .nav1 a.ikon {
+        background: #1faa00;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+      .nav1 a:hover {
+        background-color: #1faa00;
+        color: white;
+      }
+ }
